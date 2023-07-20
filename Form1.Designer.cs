@@ -84,12 +84,12 @@ namespace WindowsFormsAppChart
             // 차트 그리는 부분
             this.cartesianChart1.Series = new SeriesCollection
             {
-                //new LineSeries
-                //{
-                //    Title = "Pump Curve",
-                //    Values = new ChartValues<ObservablePoint>(pumpCurveData.Select(point => new ObservablePoint(point.Item1, point.Item2))),
-                //    PointGeometrySize = 10
-                //},
+                new LineSeries
+                {
+                    Title = "Pump Curve",
+                    Values = new ChartValues<ObservablePoint>(pumpCurveData.Select(point => new ObservablePoint(point.Item1, point.Item2))),
+                    PointGeometrySize = 10
+                },
                 new LineSeries
                 {
                     Title = "Fitted Curve",
